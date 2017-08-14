@@ -16,3 +16,6 @@ Resources:
             Path: /TimeResource
             Method: GET
 
+Outputs:
+  LambdaUrl:
+    Value: !Sub https://console.aws.amazon.com/lambda/home?region=${AWS::Region}#/functions/${TimeFunction}
